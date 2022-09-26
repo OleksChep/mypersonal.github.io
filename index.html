@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>CodePen - Personal Home Page  Template</title>
@@ -7,17 +7,13 @@
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<body>
-  
-  
-       <input id="text" placeholder="name"/>
+   
+<header class='c-site-header'>
+   <input id="text" placeholder="name"/>
 <button id="enter">enter name</button>
 <button id="facilitator">facilitator</button>
 <ul id="list"/>
 <p>Facilitator<span id="name"></span></p>
-<header class='c-site-header'>
-
   <nav aria-label="Main Site Links."> 
    <a href='#about'>Reality</a>
      <a href='#motivation'>Motivation</a>
@@ -67,21 +63,15 @@ function getNumberOrString(value) {
     return number_value
   }
 }
-
 function randomInt(n) {
   // Return a random number from in [0, n[
   return Math.floor(Math.random()*n);
 }
-
 function randomMember(arr) {
   // Return a random member of the array
   return arr[randomInt(arr.length)]
 }
-
-
 facilitator = [];
-
-
 document.getElementById('enter').addEventListener('click', (event) => {
   facilitator.push(getNumberOrString(document.getElementById('text').value));
   let element_list = document.getElementById('list');
@@ -89,25 +79,19 @@ document.getElementById('enter').addEventListener('click', (event) => {
   facilitator.forEach((facilitator) => {
     let new_ul = document.createElement('ul');
     new_ul.innerText = facilitator;
-
     element_list.appendChild(new_ul);
   });
-
 });
-
 document.getElementById('facilitator').addEventListener('click', (event) => {
   let new_div = document.createElement('div');
   let element_list2 = document.getElementById('list');
   element_list2.innerText = randomMember(facilitator);
-
   event.target.appendChild(new_div);
-
 });
   </script>
  </body>
 <!-- =================
   WRITE YOUR HTML HERE
-
 You only need to write the HTML that goes inside the <body> tag. To add things to the <head>, click the ⚙️ 
    ===================
 -->
