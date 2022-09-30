@@ -180,6 +180,10 @@ color: #66ccff;
     color: #FCF802;
     font-size: 15px;
   } 
+#story {
+	color: red;
+font-size: 2em;
+	}
 .input {
 	margin: 0 auto;
 	}
