@@ -137,6 +137,10 @@ line-height: 35px;
 .london:hover {
 color: #66ccff;
 }
+
+#comment {
+	height: 150px;
+}
 @media (max-width: 400px) { 
   body {
     width: 100%;
