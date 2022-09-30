@@ -42,6 +42,15 @@ src="https://www.youtube.com/embed/jz87O1kap7s"
 </main>
    <footer class='c-site-footer'>  <p><span class='london'>Below the footer are placed practical works on programming using CYF blocks</span> © 2022. All rights reserved.</p>
 </footer>
+
+        
+<h1> The Mountains</h1>
+<img id="foto" width="120" height="800">
+<div>
+<button type="button" id="previous">Previous</button>
+<button type="button" id="next">Next</button>
+</div>
+  
   <div>  Hamburger <nav id="nav" >
 <input id="button" type="image" width='100 px'/>
 <ul id ="list"></ul>
@@ -59,6 +68,31 @@ src="https://www.youtube.com/embed/jz87O1kap7s"
 </ul>
 
 <script>
+  
+  var array;
+
+
+array = ['https://cdn.britannica.com/67/19367-050-885866B4/Valley-Taurus-Mountains-Turkey.jpg', 'https://geographical.co.uk/wp-content/uploads/somalaya-mountain-range-title.jpg', 'https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg', 'https://res.cloudinary.com/dk-find-out/image/upload/q_80,w_1920,f_auto/A-Alamy-BXWK5E_vvmkuf.jpg', 'https://www.celebritycruises.com/blog/content/uploads/2022/01/most-beautiful-mountains-in-the-world-kirkjufell-iceland-1024x580.jpg', 'https://miro.medium.com/max/1400/1*cGZF-4g_DbSgUsE3yjmphA.jpeg', 'https://www.atlasandboots.com/wp-content/uploads/2016/02/Mountaineering-calendar-matterhorn-.jpg', 'https://www.celebritycruises.com/blog/content/uploads/2021/02/alaska-mountains-hero-denali.jpg', 'https://www.atlasandboots.com/wp-content/uploads/2019/05/cuernos-del-paine-most-beautiful-mountains-in-the-world.jpg', 'https://www.hindustantimes.com/web-stories/10-most-beautiful-mountains-in-the-world-641/assets/6.jpeg', 'https://i.insider.com/5ceda72d594ea510db1f6132?width=1000&format=jpeg&auto=webp'];
+let element_foto = document.getElementById('foto');
+element_foto.setAttribute("src", array[0]);
+
+
+document.getElementById('previous').addEventListener('click', (event) => {
+  let element_foto2 = document.getElementById('foto');
+  array.unshift(array.slice(-1)[0]);
+  element_foto2.setAttribute("src", array.pop());
+
+});
+
+document.getElementById('next').addEventListener('click', (event) => {
+  let element_foto3 = document.getElementById('foto');
+  array.push(array[0]);
+  element_foto3.setAttribute("src", array.shift());
+
+});
+  
+  
+  
  var value, send, links, item, http;
 
 function getNumberOrString(value) {
