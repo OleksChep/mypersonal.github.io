@@ -180,7 +180,9 @@ color: #66ccff;
     color: #FCF802;
     font-size: 15px;
   } 
-
+.input {
+	margin: 0 auto;
+	}
 
 /* don't edit this */
 .jest-lite-report__status--pass {
