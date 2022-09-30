@@ -93,6 +93,7 @@ iframe{
 article { 
   margin: 40px 50px;
 	font-size: 1.5rem;
+line-height: 35px;
   background: #eca56b;
   background:	rgb(186, 204, 222);
   background: rgb(152, 179, 205);
