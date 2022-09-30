@@ -42,9 +42,84 @@ src="https://www.youtube.com/embed/jz87O1kap7s"
 </main>
    <footer class='c-site-footer'>  <p><span class='london'>Below the footer are placed practical works on programming using CYF blocks</span> © 2022. All rights reserved.</p>
 </footer>
-   
+    Hamburger <nav id="nav" >
+<input id="button" type="image" width='100 px'/>
+<ul id ="list"></ul>
+</nav>
+<br>
+<br>
+
+<h3>Name:</h3>
+  <input id="name"></input>
+<h3>Comment:</h3>
+  <input id="comment"></input>
+  <br><br>
+  <button id="send">Send</button>
+<ul id="write">
+</ul>
+
 <script>
-  
+  var value, send, links, item, http;
+
+function getNumberOrString(value) {
+  // Convert a string value to a number if possible
+  let number_value = Number(value);
+  if (Number.isNaN(number_value)) {
+    return value
+  } else {
+    return number_value
+  }
+}
+
+
+let element_button = document.getElementById('button');
+element_button.setAttribute("src", 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/800px-Hamburger_icon.svg.png');
+
+value = getNumberOrString(document.getElementById('button').value);
+links = ['Code Your Future', 'Google', 'BBC'];
+http = ['https://codeyourfuture.io/', 'https://www.google.co.uk/', 'https://www.bbc.co.uk/'];
+
+
+document.getElementById('button').addEventListener('click', (event) => {
+  if (value == 'off') {
+    links.forEach((item) => {
+      let element_list = document.getElementById('list');
+      let new_li = document.createElement('li');
+      let new_a = document.createElement('a');
+      new_a.innerText = item;
+      new_a.setAttribute("href", http.shift());
+
+      new_li.appendChild(new_a);
+
+      element_list.appendChild(new_li);
+    });
+    value = 'on';
+    let element_button2 = document.getElementById('button');
+    element_button2.setAttribute("src", 'https://cdn-icons-png.flaticon.com/512/64/64498.png');
+  } else {
+    let element_list2 = document.getElementById('list');
+    element_list2.innerText = '';
+    value = 'off';
+    let element_button3 = document.getElementById('button');
+    element_button3.setAttribute("src", 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/800px-Hamburger_icon.svg.png');
+  }
+
+});
+
+
+send = '';
+document.getElementById('send').addEventListener('click', (event) => {
+  let element_write = document.getElementById('write');
+  let new_li2 = document.createElement('li');
+  new_li2.innerText = getNumberOrString(document.getElementById('name').value);
+
+  element_write.appendChild(new_li2);
+  let new_div = document.createElement('div');
+  new_div.innerText = getNumberOrString(document.getElementById('comment').value);
+
+  element_write.appendChild(new_div);
+
+});
  
   </script>
 
