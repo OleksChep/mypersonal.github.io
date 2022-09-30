@@ -59,7 +59,7 @@ src="https://www.youtube.com/embed/jz87O1kap7s"
 </ul>
 
 <script>
-  var value, send, links, item, http;
+ var value, send, links, item, http;
 
 function getNumberOrString(value) {
   // Convert a string value to a number if possible
@@ -88,6 +88,7 @@ document.getElementById('button').addEventListener('click', (event) => {
       let new_a = document.createElement('a');
       new_a.innerText = item;
       new_a.setAttribute("href", http.shift());
+      new_a.style.backgroundColor = '#ffffcc';
 
       new_li.appendChild(new_a);
 
@@ -105,17 +106,17 @@ document.getElementById('button').addEventListener('click', (event) => {
   }
 
 });
-
-
 send = '';
 document.getElementById('send').addEventListener('click', (event) => {
   let element_write = document.getElementById('write');
   let new_li2 = document.createElement('li');
   new_li2.innerText = getNumberOrString(document.getElementById('name').value);
+  new_li2.style.backgroundColor = '#cccccc';
 
   element_write.appendChild(new_li2);
   let new_div = document.createElement('div');
   new_div.innerText = getNumberOrString(document.getElementById('comment').value);
+  new_div.style.backgroundColor = '#ffffff';
 
   element_write.appendChild(new_div);
 
