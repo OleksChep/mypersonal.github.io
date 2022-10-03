@@ -174,8 +174,10 @@ color: #66ccff;
   h1 {
     font-size: 18px;
   } 
-  nav {
+  #nav {
      font-size: 11px;
+	  display: flex;
+justify-content: center;
   }
   .c-site-footer {
     font-size: 13px;
@@ -186,13 +188,13 @@ color: #66ccff;
     font-size: 15px;
   } 
 
-#input {	display: flex;
-justify-content: center;
+.input { 
+	display: flex;
+        justify-content: center;
 	margin: 0 auto;
 	}
 .cyfblocks {
-	display: flex;
-justify-content: center;
+	
 }
 
 
