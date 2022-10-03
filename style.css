@@ -174,9 +174,23 @@ color: #66ccff;
   h1 {
     font-size: 18px;
   } 
+	
   #nav {
      font-size: 11px;
+	 margin: 50px 0 0 0;
+	background: #eca56b;
+	border-radius: 45px;
+	height: 60px;
+	line-height: 35px;
+	padding: 0 ;
+  display: flex;
+  justify content: center;
+  background:	rgb(186, 204, 222);
+  background: rgb(152, 179, 205);
+   font-size: 1.2em;
+  font-weight: 700;  
   }
+	
   .c-site-footer {
     font-size: 13px;
   }
