@@ -186,11 +186,10 @@ color: #66ccff;
     font-size: 15px;
   } 
 .inputs {
-  margin: 150px 0 0 100px;
+  margin: 50px 0 0 0;
+	padding: 0 0 0 100px;
 	background: #eca56b;
 	border-radius: 45px;
-	
-	
 	
 	height: 60px;
 	line-height: 35px;
