@@ -194,7 +194,6 @@ font-size: 2em;
 	}
 .cyfblocks {
 	display: flex;
-  flex-direction: row;
 }
 
 
