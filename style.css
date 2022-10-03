@@ -186,14 +186,13 @@ color: #66ccff;
     font-size: 15px;
   } 
 .comment, .inputs {
-  margin: 50px 0 0 0;
-	padding: 0 0 0 150px;
+ 
 	background: rgb(152, 179, 205);
 	border-radius: 25px;
 	
 	height: 60px;
 	line-height: 35px;
-	padding: 0 ;
+	
   display: flex;
   justify content: center;
 
