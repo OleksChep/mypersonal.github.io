@@ -175,14 +175,7 @@ color: #66ccff;
     font-size: 18px;
   } 
 	
-  #nav {
-     font-size: 11px;
-	 margin: 50px 0 0 0;
-	
-  display: flex;
-  justify content: right;
  
-  }
 	
   .c-site-footer {
     font-size: 13px;
@@ -223,7 +216,14 @@ color: #66ccff;
 	margin-top: -150px;
 	margin-left: 120px;
 }
-
+ #nav {
+     font-size: 11px;
+	 margin: 50px 0 0 0;
+	
+  display: flex;
+  justify content: right;
+ 
+  }
 
 /* edit this */
 
