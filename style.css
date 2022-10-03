@@ -68,8 +68,9 @@ main {
   margin-top: 20px;
 }
 h2 {
-  margin-left: 120px;
+  margin-left: 220px;
   padding-top: 20px;
+	color: orange;
 }
 #motivation {
   padding-top:  30px;
