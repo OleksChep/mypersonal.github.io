@@ -185,7 +185,7 @@ color: #66ccff;
     color: #FCF802;
     font-size: 15px;
   } 
-.inputs {
+.comment, .inputs {
   margin: 50px 0 0 0;
 	background: rgb(152, 179, 205);
 	border-radius: 45px;
