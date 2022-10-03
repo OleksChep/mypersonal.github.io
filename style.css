@@ -192,6 +192,11 @@ font-size: 2em;
 #input {
 	margin: 0 auto;
 	}
+.cyfblocks {
+	display: flex;
+  flex-direction: row;
+}
+
 
 /* edit this */
 
