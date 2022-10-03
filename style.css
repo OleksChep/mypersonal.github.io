@@ -215,7 +215,10 @@ color: #66ccff;
  	 justify content: center;
 	font-size: 1.0em;
 }
-
+#buttons {
+	margin-top:150px;
+	margin-left:300px;
+}
 
 
 /* edit this */
