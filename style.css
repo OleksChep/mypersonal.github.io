@@ -222,7 +222,8 @@ color: #66ccff;
 	
   display: flex;
   justify content: right;
- 
+  font-size: 1.2em;
+  font-weight: 700;
   }
 
 /* edit this */
