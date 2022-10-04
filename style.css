@@ -20,10 +20,10 @@ header: {
   margin: 0 auto;
 }
 .welcome {
-	color: rgba(16,173,232,1);
-	font-size: 1.1em;
-	line-height: 25px;
- margin-top: 20px;
+	    color: rgba(16,173,232,1);
+	     font-size: 1.1em;
+	     line-height: 25px;
+             margin-top: 20px;
 	-webkit-animation: blink 2s linear infinite; 
 	animation: blink 2s linear infinite; 
 	font-weight: bold; 
@@ -42,7 +42,7 @@ header: {
 	100% { color: #FF0; } 
 }
 
-}
+
 .welcome:hover {
   color: transparent;
 }
