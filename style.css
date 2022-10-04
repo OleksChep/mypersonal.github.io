@@ -27,19 +27,19 @@ header: {
 	-webkit-animation: blink 2s linear infinite; 
 	animation: blink 2s linear infinite; 
 	font-weight: bold; 
-	color: color: #F00; 
+	color: color: #FF0; 
 }
 
 @-webkit-keyframes blink { 
-	0% { color: #F00; }
-	50% { color: #FBB; }
-	100% { color: #F00; }
+	0% { color: #FF0; }
+	50% { color: #0FF; }
+	100% { color: #FF0; }
 }
 
 @keyframes blink {  
-	0% { color: #F00; }
-	50% { color: #FBB; }
-	100% { color: #F00; } 
+	0% { color: #FF0; }
+	50% { color: #0FF; }
+	100% { color: #FF0; } 
 }
 
 }
